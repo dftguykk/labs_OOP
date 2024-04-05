@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Cylinder.h"
+
 using namespace std;
 
 class Cylinder {
@@ -64,6 +64,10 @@ int main() {
     cout << "Volume: " << cylinder.calculateVolume() << endl;
     cout << "Lateral Surface Area: " << cylinder.calculateLateralSurfaceArea() << endl;
     cout << "Total Surface Area: " << cylinder.calculateTotalSurfaceArea() << endl;
+
+    cylinder.setRadius(10.0);
+    cylinder.setHeight(7.0);
+    cout << "Lateral Surface Area: " << cylinder.calculateLateralSurfaceArea() << endl;
 
     return 0;
 }
