@@ -132,57 +132,59 @@ void sortByOwner()
     }
 }
 
+int menu()
+{
+    int choice;
+    int number_property;
+
+    cout << "\nMenu:\n";
+    cout << "1-Show a record\n";
+    cout << "2-Save a record\n";
+    cout << "3-Add a new record\n";
+    cout << "4-Delete a record\n";
+    cout << "5-Modify a record\n";
+    cout << "6-Sort by price a record\n";
+    cout << "7-Exit\n";
+    cout << "\n";
+    cout << "Enter your choise  ";
+    cin >> choice;
+
+    switch (choice)
+    {
+    case 1:
+        showRecord();
+        break;
+    case 2:
+        saveToFile();
+        break;
+    case 3:
+        addNew();
+        break;
+    case 4:
+        cout << "Enter record number to delete: ";
+        cin >> number_property;
+        del(number_property);
+        break;
+    case 5:
+        cout << "Enter record number to modify: ";
+        cin >> number_property;
+        modifyRecord(number_property);
+        break;
+    case 6:
+        sortByOwner();
+        break;
+    case 7:
+        return 0;
+    default:
+        cout << "Invalid choise. Please try again.\n";
+        break;
+    } while (choice != 7);
+}
+
 int main()
 {
-    int number_property;
-    int choice;
-
     loadRecordFromFile();
+    menu();
 
-    do
-    {
-        cout << "\nMenu:\n";
-        cout << "1-Show a record\n";
-        cout << "2-Save a record\n";
-        cout << "3-Add a new record\n";
-        cout << "4-Delete a record\n";
-        cout << "5-Modify a record\n";
-        cout << "6-Sort by price a record\n";
-        cout << "7-Exit\n";
-        cout << "\n";
-        cout << "Enter your choise  ";
-        cin >> choice;
-
-        switch (choice)
-        {
-        case 1:
-            showRecord();
-            break;
-        case 2:
-            saveToFile();
-            break;
-        case 3:
-            addNew();
-            break;
-        case 4:
-            cout << "Enter record number to delete: ";
-            cin >> number_property;
-            del(number_property);
-            break;
-        case 5:
-            cout << "Enter record number to modify: ";
-            cin >> number_property;
-            modifyRecord(number_property);
-            break;
-        case 6:
-            sortByOwner();
-            break;
-        case 7:
-            return 0;
-        default:
-            cout << "Invalid choise. Please try again.\n";
-            break;
-        }
-    } while (choice != 7);
     return 0;
 }
