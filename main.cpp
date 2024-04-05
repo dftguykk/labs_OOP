@@ -33,17 +33,14 @@ public:
             cout << "Error: Height must be positive." << endl;
     }
 
-    // Метод для обчислення об'єму циліндра
     double calculateVolume() const {
         return pi * radius * radius * height;
     }
 
-    // Метод для обчислення площі бічної поверхні циліндра
     double calculateLateralSurfaceArea() const {
         return 2 * pi * radius * height;
     }
 
-    // Метод для обчислення загальної поверхні циліндра
     double calculateTotalSurfaceArea() const {
         return 2 * pi * radius * (radius + height);
     }
