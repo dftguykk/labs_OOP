@@ -6,7 +6,7 @@ class Cylinder {
 private:
     double radius;
     double height;
-    double pi = 3.14159;
+    const double PI = 3.14159;
 
 public:
     Cylinder(double r, double h) : radius(r), height(h) {}
@@ -34,15 +34,15 @@ public:
     }
 
     double calculateVolume() const {
-        return pi * radius * radius * height;
+        return PI * radius * radius * height;
     }
 
     double calculateLateralSurfaceArea() const {
-        return 2 * pi * radius * height;
+        return 2 * PI * radius * height;
     }
 
     double calculateTotalSurfaceArea() const {
-        return 2 * pi * radius * (radius + height);
+        return 2 * PI * radius * (radius + height);
     }
 };
 
