@@ -1,0 +1,43 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+/.vs/labs_OOP/.vs
+/.vs/labs_OOP/FileContentIndex
+/oop_labs/.vs/oop_labs/FileContentIndex
+/oop_labs/.vs/oop_labs/v17
+/oop_labs/oop_labs/x64/Debug
+/oop_labs/x64/Debug
+/.vs/labs_OOP/v17
+/.vs
+*.vcxproj
+*.filters
+*.user
