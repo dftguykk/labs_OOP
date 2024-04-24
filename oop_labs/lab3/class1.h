@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CLASS_H
+#define CLASS_H
 
 class Triangle 
 {
@@ -16,3 +17,5 @@ public:
     double perimeter() const;
     bool isEquilateral() const;
 };
+
+#endif
